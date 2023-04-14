@@ -762,7 +762,7 @@
       <li class="form-line" data-type="control_image" id="id_71">
         <div id="cid_71" class="form-input-wide" data-layout="full">
           <div style="text-align: center">
-            <img alt="Image" loading="lazy" class="form-image" style="border: 0" src="./assets/delhi-16th-april-1.jpg"
+            <img alt="Image" loading="lazy" class="form-image" style="border: 0" src="./assets/delhi-16th-april-1.png"
               tabindex="0" height="425px" width="680px" data-component="image" />
           </div>
         </div>
@@ -830,7 +830,7 @@
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_textarea" id="id_22">
+      <!-- <li class="form-line" data-type="control_textarea" id="id_22">
         <label class="form-label form-label-top form-label-auto" id="label_22" for="input_22">
           Tell us something interesting about yourself:
         </label>
@@ -838,8 +838,8 @@
           <textarea id="input_22" class="form-textarea" name="q22_tellUs" style="width: 648px; height: 40px"
             data-component="textarea" aria-labelledby="label_22"></textarea>
         </div>
-      </li>
-      <li class="form-line form-line-column" data-type="control_coupon" id="coupon_label">
+      </li> -->
+      <!-- <li class="form-line form-line-column" data-type="control_coupon" id="coupon_label">
         <label class="form-label form-label-top" id="label_81" for="input_81">
           Coupon (if any)
         </label>
@@ -855,7 +855,7 @@
               You'll see the updated amount at
               the time of payment.</label></span>
         </div>
-      </li>
+      </li> -->
       <li class="form-line jf-required" data-type="control_widget" id="id_90">
         <div>
           <input type="checkbox" id="input-tnc"
@@ -918,10 +918,10 @@
             return false;
           }
 
-          if (!aboutYou) {
-            alert("please enter a little bit about yourself!");
-            return false;
-          }
+          // if (!aboutYou) {
+          //   alert("please enter a little bit about yourself!");
+          //   return false;
+          // }
           return { name, email, contact, age, gender, aboutYou };
         }
 
@@ -956,7 +956,7 @@
                 phone: contact,
                 age,
                 gender,
-                about: aboutYou,
+                about: aboutYou || '',
                 amount: amountToBePaid,
                 page: window.location.pathname.split('/').pop().split('.')[0],
                 purchasedAt: new Date(),
@@ -1084,10 +1084,10 @@
           <div id="text_27" class="form-html" data-component="text" tabindex="0">
             <p><strong>Terms and Conditions</strong></p>
             <ul style="list-style-type: disc">
-              <li>
+              <!-- <li>
                 <span style="font-size: 8pt">This event is only for people between the age of 25 – 45 years. Kindly
                   carry your valid government ID at the venue.</span>
-              </li>
+              </li> -->
               <li>
                 <span style="font-size: 8pt">We are only providing a platform for people to come together and network.
                   Anything that happens between them shall not bear any responsibility on the organizers.</span>
