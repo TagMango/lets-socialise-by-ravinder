@@ -889,7 +889,7 @@
           const gender = document.getElementById("input_80_1").checked
             ? "female"
             : "male";
-          const aboutYou = document.getElementById("input_22").value;
+          // const aboutYou = document.getElementById("input_22").value;
 
           if (!name) {
             alert("please enter your name!");
@@ -922,7 +922,10 @@
           //   alert("please enter a little bit about yourself!");
           //   return false;
           // }
-          return { name, email, contact, age, gender, aboutYou };
+          return {
+            name, email, contact, age, gender,
+            // aboutYou 
+          };
         }
 
         document.getElementById("rzp-button1").onclick = function (e) {
